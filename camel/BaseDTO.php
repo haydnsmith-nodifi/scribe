@@ -3,13 +3,12 @@
 namespace Knuckles\Camel;
 
 use Illuminate\Contracts\Support\Arrayable;
-use Spatie\DataTransferObject\DataTransferObject;
+use Spatie\DataTransferObject\FlexibleDataTransferObject;
 
-
-class BaseDTO extends DataTransferObject implements Arrayable, \ArrayAccess
+class BaseDTO extends FlexibleDataTransferObject implements \ArrayAccess, Arrayable
 {
     /**
-     * @var array $custom
+     * @var array
      * Added so end-users can dynamically add additional properties for their own use.
      */
     public array $custom = [];

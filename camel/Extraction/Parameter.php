@@ -10,7 +10,7 @@ class Parameter extends BaseDTO
     public string $name;
     public ?string $description = null;
     public bool $required = false;
-    public mixed $example = null;
+    public $example = null;
     public string $type = 'string';
     public array $enumValues = [];
     public bool $exampleWasSpecified = false;
